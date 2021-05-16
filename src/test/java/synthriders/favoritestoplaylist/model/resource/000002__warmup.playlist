@@ -1,0 +1,58 @@
+{
+  "dataString": [
+    {
+      "hash": "d0fc1d18527dc973bff5b6bd39c4f4383ae2914c77ba0d9a103c37a90d534663",
+      "name": "Shelter",
+      "author": "Porter Robbinson, Madeon",
+      "beatmapper": "KuritsaDBS",
+      "difficulty": 3,
+      "trackDuration": 221.0,
+      "addedTime": 1615425301
+    },
+    {
+      "hash": "79f1afcd84337d5db865726fdecfc142bab63efc665bce3f389baabb29816b4d",
+      "name": "Blinding Lights",
+      "author": "The Weeknd",
+      "beatmapper": "Fasty",
+      "difficulty": 3,
+      "trackDuration": 202.0,
+      "addedTime": 1615425233
+    },
+    {
+      "hash": "478ac525bd60aaae4e5c5b2c31dca86ee198f6cb0aff44b5227afa785b1abb01",
+      "name": "Only Now (feat. Tyler Graves)",
+      "author": "Seven Lions",
+      "beatmapper": "ItsGabePlay",
+      "difficulty": 3,
+      "trackDuration": 211.0,
+      "addedTime": 1615425262
+    },
+    {
+      "hash": "0f8c8a5a2f6325ec1cf01e2a54b193d8fb8e3a2931fe21e56518330cf79b400f",
+      "name": "Natural",
+      "author": "Imagine Dragons",
+      "beatmapper": "Teebo",
+      "difficulty": 5,
+      "trackDuration": 192.0,
+      "addedTime": 1615425328
+    },
+    {
+      "hash": "2a0985ff555194da586394f8325ad29b12fa7a0fbefa5c3b9b0e47f50d7bb0cb",
+      "name": "Eden",
+      "author": "Battle Beast",
+      "beatmapper": "ICHDerHorst",
+      "difficulty": 4,
+      "trackDuration": 255.0,
+      "addedTime": 1615425359
+    }
+  ],
+  "SelectedIconIndex": 0,
+  "SelectedTexture": 0,
+  "namePlaylist": "warm up",
+  "description": "new playlist",
+  "gradientTop": "#24491F",
+  "gradientDown": "#FB5B43",
+  "colorTitle": "#FFFFFF",
+  "colorTexture": "#405436",
+  "creationDate": "1613788422"
+}
