@@ -1,0 +1,26 @@
+plugins {
+    id 'java'
+    id 'application'
+    id 'idea'
+}
+
+group 'synth.riders.favorites.to.playlist'
+version '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    compile group: 'com.google.inject', name: 'guice', version: '4.1.0'
+    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.7.0'
+    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.7.0'
+}
+
+application {
+    mainClass = 'synthriders.favoritestoplaylist.init.Main'
+}
+
+test {
+    useJUnitPlatform()
+}

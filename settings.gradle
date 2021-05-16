@@ -1,0 +1,3 @@
+rootProject.name = 'synthriders.favorites.to.playlist'
+include('app')
+
