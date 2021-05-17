@@ -1,17 +1,22 @@
 package synthriders.favoritestoplaylist.model;
 
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.databind.annotation.JsonDeserialize;
 import com.fasterxml.jackson.databind.annotation.JsonSerialize;
 import org.immutables.value.Value;
 
+import java.util.List;
+
 @Value.Immutable
 @JsonSerialize(as = ImmutablePlaylist.class)
 @JsonDeserialize(as = ImmutablePlaylist.class)
+@Value.Style(jdkOnly = true)
+@JsonIgnoreProperties(ignoreUnknown = true)
 public abstract class Playlist {
 
     @JsonProperty("dataString")
-    abstract List<ToBeNamed> playlistObjects();
+    abstract List<PlaylistSong> playlistObjects();
 
     @JsonProperty("SelectedIconIndex")
     @Value.Default
@@ -25,17 +30,24 @@ public abstract class Playlist {
         return 0;
     }
 
+    @JsonProperty("namePlaylist")
+    abstract String namePlaylist();
 
-    /**
-     *   "SelectedIconIndex": 0,
-     *   "SelectedTexture": 0,
-     *   "namePlaylist": "warm up",
-     *   "description": "new playlist",
-     *   "gradientTop": "#24491F",
-     *   "gradientDown": "#FB5B43",
-     *   "colorTitle": "#FFFFFF",
-     *   "colorTexture": "#405436",
-     *   "creationDate": "1613788422"
-     */
+    @JsonProperty("description")
+    abstract String description();
 
+    @JsonProperty("gradientTop")
+    abstract String gradientTop();
+
+    @JsonProperty("gradientDown")
+    abstract String gradientDown();
+
+    @JsonProperty("colorTitle")
+    abstract String colorTitle();
+
+    @JsonProperty("colorTexture")
+    abstract String colorTexture();
+
+    @JsonProperty("creationDate")
+    abstract String creationDate();
 }
