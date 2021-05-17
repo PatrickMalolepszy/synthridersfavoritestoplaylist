@@ -18,15 +18,32 @@ public abstract class PlaylistSong {
     @JsonProperty("name")
     abstract String name();
 
+    @JsonProperty("author")
+    abstract String author();
+
     @JsonProperty("beatmapper")
-    abstract String beatmapper();
+    String beatmapper() {
+        return "";
+    }
 
     @JsonProperty("difficulty")
-    abstract long difficulty();
+    long difficulty() {
+        return 0;
+    }
 
     @JsonProperty("trackDuration")
-    abstract long trackDuration();
+    double trackDuration()  {
+        return 0.0;
+    }
 
     @JsonProperty("addedTime")
     abstract long addedTime();
 }
+
+//        "hash": "6cbab45b7a91a0a1883b0a0d14fb5d3b540186aae80ba7c66d4c60b047460325",
+//        "name": "Bruises",
+//        "author": "Fox Stevenson",
+//        "beatmapper": "Teebo",
+//        "difficulty": 4,
+//        "trackDuration": 223.0,
+//        "addedTime": 1608229395

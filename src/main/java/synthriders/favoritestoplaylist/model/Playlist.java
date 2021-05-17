@@ -34,7 +34,9 @@ public abstract class Playlist {
     abstract String namePlaylist();
 
     @JsonProperty("description")
-    abstract String description();
+    String description() {
+        return "";
+    }
 
     @JsonProperty("gradientTop")
     abstract String gradientTop();

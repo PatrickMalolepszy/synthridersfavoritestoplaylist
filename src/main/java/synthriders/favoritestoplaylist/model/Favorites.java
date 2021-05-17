@@ -16,7 +16,7 @@ import java.util.List;
 public abstract class Favorites {
 
     @JsonProperty("Favorite")
-    abstract List<String> playlistObjects();
+    public abstract List<String> playlistObjects();
 
 
 }
