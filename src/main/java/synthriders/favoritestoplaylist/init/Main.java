@@ -1,8 +1,18 @@
 package synthriders.favoritestoplaylist.init;
 
+
+import synthriders.favoritestoplaylist.model.ImmutablePlaylist;
+import synthriders.favoritestoplaylist.model.ImmutablePlaylistSong;
+import synthriders.favoritestoplaylist.model.Playlist;
+
 public class Main {
 
     public static void main(String[] args) {
-        System.out.println("Just getting started.");
+
+        Playlist playlist = ImmutablePlaylist.builder()
+                .addPlaylistSongs(ImmutablePlaylistSong.builder().build())
+                .build();
+
+
     }
 }

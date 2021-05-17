@@ -16,7 +16,7 @@ import java.util.List;
 public abstract class Playlist {
 
     @JsonProperty("dataString")
-    abstract List<PlaylistSong> playlistObjects();
+    abstract List<PlaylistSong> playlistSongs();
 
     @JsonProperty("SelectedIconIndex")
     @Value.Default
